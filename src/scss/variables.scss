@@ -1,0 +1,139 @@
+//
+// Colors
+//
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-green-aqua: #57A773;
+$color-green-rangoon: #100E0B;
+$color-gray-light: #F4F5F7;
+$color-gray-gallery: #EAEAEA;
+$color-gray-athens: #E8E9EF;
+$color-gray-mercury: #E3E3E3;
+$color-grey-alto: #DCDCDC;
+$color-grey-oslo: #85878C;
+$color-grey-santas: #979CAB;
+$color-gray-alum: #A4A8B2;
+$color-grey-storm: #71737C;
+$color-gray-mako: #464A56;
+$color-gray-shark: #262C30;
+$color-gray-gallery: #EAEAEA;
+
+$background: $color-gray-light;
+
+
+//
+// Fonts
+//
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: local('Helvetica Neue'), 
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeue.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue Regular';
+//   src: local('Helvetica Neue Regular'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueRegular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue Light';
+//   src: local('Helvetica Neue Light'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueLight.woff') format('woff'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueLight.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue Medium';
+//   src: local('Helvetica Neue Medium'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueMedium.woff') format('woff'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueMedium.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue Bold';
+//   src: local('Helvetica Neue Bold'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueBold.woff') format('woff'),
+//        url('~@/assets/fonts/helvetica-neue/HelveticaNeuBold.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'HelveticaNeue-Black';
+  src: url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Black.ttf') format('truetype'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Black.woff') format('woff'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Medium.ttf') format('truetype'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Medium.woff') format('woff'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Bold.woff') format('woff'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Light.ttf') format('truetype'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Light.woff') format('woff'),
+       url('~@/assets/fonts/HelveticaNeue/HelveticaNeue-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('~@/assets/fonts/HelveticaNeue/Helvetica.ttf') format('truetype'),
+       url('~@/assets/fonts/HelveticaNeue/Helvetica.woff') format('woff'),
+       url('~@/assets/fonts/HelveticaNeue/Helvetica.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$helvetica-bold: 'HelveticaNeue-Bold', sans-serif;
+$helvetica-medium: 'HelveticaNeue-Medium', sans-serif;
+$helvetica-light: 'HelveticaNeue-Light', sans-serif;
+$helvetica: 'Helvetica', sans-serif;
+
+
+//
+// Mixins
+//
+@mixin h1() {
+  font-size: 72px;
+  line-height: 96px;
+  font-weight: 400;
+  color: $color-black;
+  font-family: "Segoe UI", sans-serif;
+}
+
+@mixin text($size, $weight: 400, $color: inherit) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+  @content;
+}

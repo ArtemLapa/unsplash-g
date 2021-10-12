@@ -1,0 +1,16 @@
+<template>
+  <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <g id="icon-user">
+      <g id="user" transform="translate(3.3333333 2.5)">
+        <path d="M13.3333 5L13.3333 3.33333C13.3333 1.49238 11.8409 0 10 0L3.33333 0C1.49238 0 0 1.49238 0 3.33333L0 5" transform="translate(0 10)" id="Path" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3.33333 6.66667C5.17428 6.66667 6.66667 5.17428 6.66667 3.33333C6.66667 1.49238 5.17428 0 3.33333 0C1.49238 0 0 1.49238 0 3.33333C0 5.17428 1.49238 6.66667 3.33333 6.66667Z" transform="translate(3.3333333 0)" id="Oval" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: "UserIcon"
+}
+</script>

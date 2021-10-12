@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 100%;
+}
+
+body {
+  font-family: $helvetica;
+}
+
+ul, ol, dl {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1568px;
+  padding: 0 12px;
+  margin: 0 auto;
+  width: 100%;
+}
