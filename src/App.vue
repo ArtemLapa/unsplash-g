@@ -1,15 +1,18 @@
 <template>
-  <div id="app">
-    <Header/>
-    <router-view/>
-  </div>
+  <v-app>
+    <Header />
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
 import Header from "@/components/Layouts/Header";
+
 export default {
-  components: {Header}
-}
+  components: { Header },
+};
 </script>
 
 <style lang="scss">

@@ -8,8 +8,7 @@
           </h1>
 
           <p class="preview__description">
-            The internet’s source of freely usable images.
-            Powered by creators everywhere.
+            The internet’s source of freely usable images. Powered by creators everywhere.
           </p>
 
           <button class="preview__btn">Explore All</button>
@@ -17,7 +16,7 @@
       </div>
 
       <div class="preview__right-side">
-        <img src="../assets/images/preview-image.jpg" alt="Preview image" class="preview__image">
+        <img src="../assets/images/preview-image.jpg" alt="Preview image" class="preview__image" />
       </div>
     </div>
 
@@ -29,8 +28,8 @@
 import MainNavigation from "./Layouts/MainNavigation/MainNavigation";
 export default {
   name: "Preview",
-  components: {MainNavigation}
-}
+  components: { MainNavigation },
+};
 </script>
 
 <style scoped lang="scss">

@@ -1,16 +1,15 @@
 <template>
   <ul class="filters-navigation__list">
     <li
-        class="filters-navigation__item"
-        v-for="filter in filters"
-        :key="filter.id"
-        @click="activeFilter"
-        :class="[filter.active ? 'filters-navigation__item--active' : 'filters-navigation__item']"
+      class="filters-navigation__item"
+      v-for="filter in filters"
+      :key="filter.id"
+      @click="activeFilter"
+      :class="[filter.active ? 'filters-navigation__item--active' : 'filters-navigation__item']"
     >
       {{ filter.value }}
     </li>
   </ul>
-
 </template>
 
 <script>
@@ -19,22 +18,22 @@ export default {
   data: () => ({
     isActiveFilter: false,
     filters: [
-      {id: 0, value: "Trending", active: true},
-      {id: 1, value: "Nature", active: false},
-      {id: 2, value: "Travel", active: true},
-      {id: 3, value: "Animals", active: false},
-      {id: 4, value: "Food", active: false},
-      {id: 5, value: "Health", active: false},
-      {id: 6, value: "Technology", active: false},
-      {id: 7, value: "Events", active: false},
+      { id: 0, value: "Trending", active: true },
+      { id: 1, value: "Nature", active: false },
+      { id: 2, value: "Travel", active: true },
+      { id: 3, value: "Animals", active: false },
+      { id: 4, value: "Food", active: false },
+      { id: 5, value: "Health", active: false },
+      { id: 6, value: "Technology", active: false },
+      { id: 7, value: "Events", active: false },
     ],
   }),
   methods: {
     activeFilter() {
-      return this.filters.active = !this.filters.active;
-    }
-  }
-}
+      return (this.filters.active = !this.filters.active);
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -55,8 +54,7 @@ $style: "filters-navigation";
     border: 1px solid $color-gray-athens;
     border-radius: 20px;
     cursor: pointer;
-    transition: color .2s ease-in,
-    border-color .2s ease-in;
+    transition: color 0.2s ease-in, border-color 0.2s ease-in;
     // &:hover {
     //   font-family: $helvetica-medium;
     //   font-weight: 500;

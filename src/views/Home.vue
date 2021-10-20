@@ -1,8 +1,8 @@
 <template>
-  <main>
-    <Preview/>
-    <MainGrid/>
-  </main>
+  <div>
+    <Preview />
+    <MainGrid />
+  </div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
   name: "Home",
   components: {
     MainGrid,
-    Preview
-  }
-}
+    Preview,
+  },
+};
 </script>

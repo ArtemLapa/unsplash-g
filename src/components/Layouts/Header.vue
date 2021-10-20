@@ -1,32 +1,24 @@
 <template>
   <header class="header">
-    <div class="container">
+    <div class="my-container">
       <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
-            <router-link
-                to="/"
-                class="header__navigation-link"
-                exact-active-class="header__active-link"
-            >
+            <router-link to="/" class="header__navigation-link" exact-active-class="header__active-link">
               Home
             </router-link>
           </li>
           <li class="header__navigation-item">
             <router-link
-                to="/featured-collections"
-                class="header__navigation-link"
-                exact-active-class="header__active-link"
+              to="/featured-collections"
+              class="header__navigation-link"
+              exact-active-class="header__active-link"
             >
               Featured collections
             </router-link>
           </li>
-          <li class="header__navigation-item" >
-            <router-link
-                to="/profile"
-                class="header__navigation-link"
-                exact-active-class="header__active-link"
-            >
+          <li class="header__navigation-item">
+            <router-link to="/profile" class="header__navigation-link" exact-active-class="header__active-link">
               My profile
             </router-link>
           </li>
@@ -34,7 +26,7 @@
 
         <div class="header__icons-group">
           <UserIcon name="user-icon" />
-          <SearchIcon name="search-icon"/>
+          <SearchIcon name="search-icon" />
         </div>
       </nav>
     </div>
@@ -46,8 +38,8 @@ import UserIcon from "../Icons/UserIcon";
 import SearchIcon from "../Icons/SearchIcon";
 export default {
   name: "Header",
-  components: {SearchIcon, UserIcon}
-}
+  components: { SearchIcon, UserIcon },
+};
 </script>
 
 <style scoped lang="scss">

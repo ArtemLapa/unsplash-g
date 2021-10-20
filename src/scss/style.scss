@@ -14,7 +14,9 @@ body {
   font-family: $helvetica;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin: 0;
 }
 li {
@@ -32,7 +34,7 @@ button {
   outline: none;
 }
 
-.container {
+.my-container {
   max-width: 1568px;
   padding: 0 12px;
   margin: 0 auto;

@@ -1,13 +1,12 @@
 <template>
   <div class="main-navigation">
-    <div class="container">
+    <div class="my-container">
       <nav class="main-navigation__nav">
         <SearchNavigation />
-        <FiltersNavigation/>
+        <FiltersNavigation />
       </nav>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -17,9 +16,9 @@ export default {
   name: "MainNavigation",
   components: {
     FiltersNavigation,
-    SearchNavigation
-  }
-}
+    SearchNavigation,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -42,5 +41,4 @@ $style: "main-navigation";
     border-radius: 8px;
   }
 }
-
 </style>
