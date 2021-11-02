@@ -1,15 +1,14 @@
 <template>
   <div>
-    <Preview />
-    <MainGrid />
+    <Preview/>
+    <MainGrid/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 import Preview from "../components/Preview";
-import MainGrid from "../components/Layouts/MainGrid/MainGrid";
+import MainGrid from "../components/Layouts/Posts/PostsLayout";
+
 export default {
   name: "Home",
   components: {

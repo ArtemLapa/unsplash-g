@@ -19,52 +19,9 @@ $color-gray-shark: #262c30;
 $color-gray-gallery: #eaeaea;
 
 $background: $color-gray-light;
-
 //
 // Fonts
 //
-// @font-face {
-//   font-family: 'Helvetica Neue';
-//   src: local('Helvetica Neue'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeue.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Helvetica Neue Regular';
-//   src: local('Helvetica Neue Regular'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueRegular.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Helvetica Neue Light';
-//   src: local('Helvetica Neue Light'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueLight.woff') format('woff'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueLight.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Helvetica Neue Medium';
-//   src: local('Helvetica Neue Medium'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueMedium.woff') format('woff'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueMedium.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Helvetica Neue Bold';
-//   src: local('Helvetica Neue Bold'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeueBold.woff') format('woff'),
-//        url('~@/assets/fonts/helvetica-neue/HelveticaNeuBold.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: "HelveticaNeue-Black";
@@ -120,11 +77,22 @@ $helvetica: "Helvetica", sans-serif;
 // Mixins
 //
 @mixin h1() {
-  font-size: 72px;
-  line-height: 96px;
+  font-size: 32px;
   font-weight: 400;
   color: $color-black;
   font-family: "Segoe UI", sans-serif;
+  @include media($screen-tablet) {
+    font-size: 48px;
+  }
+
+  @include media($screen-netbook) {
+    font-size: 56px;
+  }
+
+  @include media($screen-desktop-large) {
+    font-size: 72px;
+    line-height: 94px;
+  }
 }
 
 @mixin text($size, $weight: 400, $color: inherit) {
@@ -135,3 +103,34 @@ $helvetica: "Helvetica", sans-serif;
   color: $color;
   @content;
 }
+
+/* Screens */
+$screen-iphone-5: 320px;
+$screen-iphone-6: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet: 768px;
+$screen-tablet-large: 860px;
+$screen-netbook: 961px;
+$screen-desktop: 1025px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1441px;
+$screen-retina: 1660px;
+
+$screen-xs: 320px;
+$screen-sm: 600px;
+$screen-md: 960px;
+$screen-lg: 1264px;
+$screen-xl: 1904px;
+
+@mixin media($screen: $screen-desktop) {
+  @media screen and (min-width: $screen) {
+    @content;
+  }
+}
+
+//
+// SASS Variables Vuetify
+//
+$card-border-radius: 8px;

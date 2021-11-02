@@ -9,7 +9,6 @@
 
 <script>
 import Header from "@/components/Layouts/Header";
-
 export default {
   components: { Header },
 };
